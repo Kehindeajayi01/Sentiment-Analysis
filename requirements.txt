@@ -1,0 +1,6 @@
+simpletransformers
+tensorboardX
+transformers
+streamlit==1.27.0
+torch
+onnxruntime
