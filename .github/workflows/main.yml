@@ -21,7 +21,7 @@ jobs:
       run: az config set extensions.use_dynamic_install=yes_without_prompt
 
     - name: attach workspace
-      run: az ml folder attach -w "azureml-onnx"
+      run: az ml folder attach --workspace-name "azureml-onnx"
     
     - name: retrieve the model 
-      run: az ml model download -v target_dir "." --model-id "roberta-sequence-classification:1"
+      run: az ml model download -v --target-dir "." --model-id "roberta-sequence-classification:1"
