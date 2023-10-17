@@ -24,4 +24,5 @@ jobs:
       run: az ml folder attach --workspace-name "azureml-onnx"
     
     - name: retrieve the model 
+    
       run: az ml model download -v --target-dir "." --model-id "roberta-sequence-classification:1"
